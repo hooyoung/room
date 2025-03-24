@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Room</title>
+		<style>
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	margin: 0;
+}
+input {
+	width: 100%;
+}
+.split {
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.left {
+	width: 50%;
+	left: 0;
+	background-color: #111;
+	color: #ddd;
+}
+
+.right {
+	width: 50%;
+	right: 0;
+}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="split left">
+			<form id="chatform">
+				<input name="msg" id="msg" type="text" placeholder="Type here">
+			</form>
+			<div id="chatwindow">
+			</div>
+		</div>
+
+		<div class="split right">
+			<div id="info">
+				Move with w/a/s/d (forward/strafe left/back/strafe right);<br>
+				click inside to focus, then use mouse to look around
+			</div>
+		</div> 
+
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
