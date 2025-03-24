@@ -1,3 +1,5 @@
+![a screenshot](static/screenshot.png)
+
 To run:
 
 	. .venv/bin/activate  # for python venv
